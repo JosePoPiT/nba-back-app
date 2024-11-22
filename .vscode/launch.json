@@ -1,0 +1,56 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ServicioNbaPlayersListApplication<servicio-nba-players-list>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.servicio.servicio_nba_players_list.ServicioNbaPlayersListApplication",
+      "projectName": "servicio-nba-players-list",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49820 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=servicio-nba-players-list"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServicioEurekaServerApplication<servicio-eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.servicio.eureka_server.ServicioEurekaServerApplication",
+      "projectName": "servicio-eureka-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60060 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=servicio-eureka-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServicioNbaPlayerDetailApplication<servicio-nba-player-detail>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.servicio.nba_player_detail.ServicioNbaPlayerDetailApplication",
+      "projectName": "servicio-nba-player-detail",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServicioGatewayApplication<servicio-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.servicio.gateway.ServicioGatewayApplication",
+      "projectName": "servicio-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-TeamServiceApplication<team-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.servicio.nba_teams.team_service.TeamServiceApplication",
+      "projectName": "team-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

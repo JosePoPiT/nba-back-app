@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: servicio-nba-players-list
+          uri: lb://servicio-nba-players-list
+          predicates:
+            - Path=/players/**
+        - id: servicio-nba-player-detail
+          uri: lb://servicio-nba-player-detail
+          predicates:
+            - Path=/player-detail/**
+        - id: servicio-nba-teams
+          uri: lb://servicio-nba-teams
+          predicates:
+          - Path=/teams/**
+            
